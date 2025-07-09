@@ -3,7 +3,7 @@ import "./NewLaunchSlider.css";
 import { FaCircleChevronLeft, FaCircleChevronRight } from "react-icons/fa6";
 import axios from "axios";
 
-const BASE_URL = "http://localhost:5000/api";
+const BASE_URL = process.env.REACT_APP_API_URL;
 
 const NewLaunchSlider = () => {
   const [properties, setProperties] = useState([]);
