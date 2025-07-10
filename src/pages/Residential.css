@@ -37,13 +37,13 @@
 
 .gallery-main-box {
   display: grid;
-  grid-template-rows: 2.5fr 1fr;
+  grid-template-rows: auto 1fr;
   gap: 16px;
   height: auto;
   width: 100%;
   /* border-radius: 10px; */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  /* border: 2px solid #5a4c4c; */
+  /* border: 5px solid #b50ad3; */
 
 }
 
@@ -57,11 +57,11 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
   gap: 16px;
   height: 130px;
-  width: 100%;
-  /* border: 2px solid #333; */
+  /* border: 2px solid #26af0a; */
+  overflow-x: auto;
+  margin: 0rem auto;
 
 }
 
@@ -104,7 +104,7 @@
   align-items: center;
   justify-content: center;
   gap: 5px;
-  height: 100%;
+  height: auto;
   /* border-radius: 5px; */
 
 }
@@ -138,7 +138,7 @@
 
 .main-image {
   width: 100%;
-  height: 378.55px;
+  height: 100%;
   /* border-radius: 5px; */
 }
 
@@ -176,7 +176,7 @@
 
 .main-display-info {
   width: 100%;
-  height: 99%;
+  height: 100%;
   padding: 15px;
   /* border-radius: 16px; */
   background: #fff;
@@ -305,62 +305,46 @@
   margin: .5rem 0;
 }
 
-/* @media screen and (max-width: 1180px) {
-  .gallery-main-box {
-    width: 94%;
+@media screen and (max-width: 1220px) {
+  .gallery-container{
+    width: 95%;
   }
-
-} */
-
-/* @media screen and (max-width: 980px) {
   .gallery-main-box {
-    width: 99%;
-    display: flex;
-    flex-direction: column;
-    grid-template-rows: 1fr 4fr;
+    width: 100%;
   }
 
   .sidebar {
-    flex-direction: row;
-    width: 100%;
-    height: 160px;
-    margin: 1rem 1rem;
-    gap: 1rem;
-    padding: 0rem 1rem;/
+  margin: 0rem;
 
-  }
-} */
-/* @media screen and (max-width: 730px) {
-  .gallery-container{
-    padding: 1rem 0rem;
-  }
-  .gallery-main-box {
-    width: 100%;
-  box-shadow: none;
+}
 
-    grid-template-rows: 1fr 4fr;
-  }
+
+}
+
+@media screen and (max-width: 960px) {
   .main-display {
-  display: flex;
-  flex-direction: column; 
-  border: 1px solid #333;
+  grid-template-columns: none;
+  grid-template-rows: auto 1fr; 
+  width: 100%;
+  /* border: 1px solid #333; */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 .main-display-img {
-  height: 308.55px;
+  height: 100%;
   width: 100%;
-  border: 1px solid #333;
+  /* border: 1px solid #333; */
 }
+.mai
 .logo {
   width: 60px;
   height: 60px;
   border-radius: 50%;
   margin-right: 10px;
-  border: 1px solid #333;
+  /* border: 1px solid #333; */
 }
 .project-company {
-  border: 1px solid #333;
+  /* border: 1px solid #333; */
   font-size: 22px;
   margin: 0;
 }
-} */
+}
